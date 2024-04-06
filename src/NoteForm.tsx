@@ -42,11 +42,11 @@ export function NoteForm({
         <Row>
           <Col>
             <Form.Group controlId="title">
-              <Form.Label>Title</Form.Label>
+              <Form.Label>Название</Form.Label>
               <Form.Control ref={titleRef} required defaultValue={title} />
             </Form.Group>
           </Col>
-          <Col>
+          {/* <Col>
             <Form.Group controlId="tags">
               <Form.Label>Tags</Form.Label>
               <CreatableReactSelect
@@ -71,10 +71,10 @@ export function NoteForm({
                 isMulti
               />
             </Form.Group>
-          </Col>
+          </Col> */}
         </Row>
         <Form.Group controlId="markdown">
-          <Form.Label>Body</Form.Label>
+          <Form.Label>Содержание</Form.Label>
           <Form.Control
             defaultValue={markdown}
             required
@@ -85,11 +85,11 @@ export function NoteForm({
         </Form.Group>
         <Stack direction="horizontal" gap={2} className="justify-content-end">
           <Button type="submit" variant="primary">
-            Save
+            Сохранить
           </Button>
           <Link to="..">
             <Button type="button" variant="outline-secondary">
-              Cancel
+              Отмена
             </Button>
           </Link>
         </Stack>

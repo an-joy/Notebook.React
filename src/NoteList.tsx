@@ -62,19 +62,19 @@ export function NoteList({
     <>
       <Row className="align-items-center mb-4">
         <Col>
-          <h1>Notes</h1>
+          <h1>Заметки В.В.М.</h1>
         </Col>
         <Col xs="auto">
           <Stack gap={2} direction="horizontal">
             <Link to="/new">
-              <Button variant="primary">Create</Button>
+              <Button variant="primary">Создать</Button>
             </Link>
-            <Button
+            {/* <Button
               onClick={() => setEditTagsModalIsOpen(true)}
               variant="outline-secondary"
             >
               Edit Tags
-            </Button>
+            </Button> */}
           </Stack>
         </Col>
       </Row>
@@ -82,7 +82,7 @@ export function NoteList({
         <Row className="mb-4">
           <Col>
             <Form.Group controlId="title">
-              <Form.Label>Title</Form.Label>
+              <Form.Label>Поиск по названию</Form.Label>
               <Form.Control
                 type="text"
                 value={title}
@@ -90,7 +90,7 @@ export function NoteList({
               />
             </Form.Group>
           </Col>
-          <Col>
+          {/* <Col>
             <Form.Group controlId="tags">
               <Form.Label>Tags</Form.Label>
               <ReactSelect
@@ -110,7 +110,7 @@ export function NoteList({
                 isMulti
               />
             </Form.Group>
-          </Col>
+          </Col> */}
         </Row>
       </Form>
       <Row xs={1} sm={2} lg={3} xl={4} className="g-3">
